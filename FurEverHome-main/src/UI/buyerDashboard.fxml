@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="678.0" style="-fx-background-color: #966567;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BuyerController">
+   <top>
+      <AnchorPane prefHeight="54.0" prefWidth="600.0" style="-fx-background-color: #966567;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="51.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="logoutBtn" layoutX="573.0" layoutY="15.0" mnemonicParsing="false" onAction="#onLogOut" prefHeight="27.0" prefWidth="101.0" style="-fx-background-color: #EDE9D6; -fx-font-weight: bold; -fx-text-fill: #966567;" text="LOGOUT">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="myActivityBtn" layoutX="459.0" layoutY="15.0" mnemonicParsing="false" onAction="#onMyActivity" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: #EDE9D6; -fx-font-weight: bold; -fx-text-fill: #966567;" text="MY ACTIVITY">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="homeBtn" layoutX="353.0" layoutY="15.0" mnemonicParsing="false" onAction="#onHome" prefHeight="27.0" prefWidth="103.0" style="-fx-background-color: #EDE9D6; -fx-font-weight: bold; -fx-text-fill: #966567;" text="HOME">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane fx:id="homePane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #966567;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableView" layoutX="49.0" layoutY="22.0" prefHeight="346.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="petCategoryColumn" prefWidth="144.0" text="Pet Category" />
+                <TableColumn fx:id="petNameColumn" prefWidth="112.79998779296875" text="Pet Name" />
+                  <TableColumn fx:id="breedColumn" prefWidth="144.0" text="Breed" />
+                  <TableColumn fx:id="ageColumn" prefWidth="88.0" text="Age" />
+                  <TableColumn fx:id="sexColumn" prefWidth="110.4000244140625" text="Sex" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

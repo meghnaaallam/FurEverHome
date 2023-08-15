@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="700.0" style="-fx-background-color: #966567;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FormController">
+   <children>
+      <AnchorPane fx:id="homePage" prefHeight="543.0" prefWidth="700.0">
+         <children>
+            <TableView fx:id="showHome" layoutX="22.0" layoutY="67.0" prefHeight="349.0" prefWidth="642.0" visible="false">
+              <columns>
+                <TableColumn fx:id="petCategorytb" prefWidth="155.99994468688965" text="Pet Category" />
+                  <TableColumn fx:id="petNametb" prefWidth="146.4000244140625" text="Pet Name" />
+                  <TableColumn fx:id="petBreedtb" prefWidth="139.20001220703125" text="Breed" />
+                  <TableColumn fx:id="petSextb" minWidth="0.0" prefWidth="96.79995727539062" text="Sex" />
+                  <TableColumn fx:id="petAgetb" prefWidth="45.59991455078125" text="Age" />
+              </columns>
+            </TableView>
+
+            <AnchorPane fx:id="petDetailsPane" layoutX="1.0" layoutY="58.0" prefHeight="412.0" prefWidth="590.0" visible="false">
+               <children>
+                  <Button fx:id="pDEditBtn" layoutX="273.0" layoutY="308.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" style="-fx-background-color: #463739; -fx-font-weight: bold; -fx-text-fill: #EDE9D6;" text="EDIT">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+                  <Button fx:id="pDDeleteBtn" layoutX="389.0" layoutY="308.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-font-weight: bold; -fx-background-color: #463739; -fx-text-fill: #c94b4b;" text="DELETE" textFill="#c94b4b">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+                  <Label layoutX="233.0" layoutY="48.0" style="-fx-text-fill: #d49587; -fx-font-weight: bold;" text="Pet Category:">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label layoutX="290.0" layoutY="121.0" style="-fx-text-fill: #d49587; -fx-font-weight: bold;" text="Age:">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label layoutX="211.0" layoutY="85.0" style="-fx-text-fill: #d49587; -fx-font-weight: bold;" text="Pet Seller Choice:">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label layoutX="278.0" layoutY="158.0" style="-fx-font-weight: bold; -fx-text-fill: #d49587;" text="Breed:">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label layoutX="258.0" layoutY="197.0" style="-fx-font-weight: bold; -fx-text-fill: #d49587;" text="Pet Name:">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label layoutX="292.0" layoutY="234.0" style="-fx-font-weight: bold; -fx-text-fill: #d49587;" text="Sex:">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="pDPetCategory" layoutX="331.0" layoutY="45.0" />
+                  <TextField fx:id="pDPetSellerChoice" layoutX="331.0" layoutY="82.0" />
+                  <TextField fx:id="pDPetAge" layoutX="331.0" layoutY="117.0" />
+                  <TextField fx:id="pDPetBreed" layoutX="331.0" layoutY="154.0" />
+                  <TextField fx:id="pDPetName" layoutX="331.0" layoutY="194.0" />
+                  <RadioButton fx:id="pDPetMale" layoutX="331.0" layoutY="235.0" mnemonicParsing="false" style="-fx-font-weight: bold; -fx-text-fill: #d49587;" text="Male">
+                     <font>
+                        <Font size="14.0" />
+                     </font></RadioButton>
+                  <RadioButton fx:id="PDPetFemale" layoutX="408.0" layoutY="235.0" mnemonicParsing="false" style="-fx-font-weight: bold; -fx-text-fill: #d49587;" text="Female">
+                     <font>
+                        <Font size="14.0" />
+                     </font></RadioButton>
+                  <Label fx:id="pDPetSellPriceLbl" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="264.0" layoutY="270.0" prefHeight="18.0" prefWidth="55.0" style="-fx-font-weight: bold; -fx-text-fill: #d49587;" text="Price:">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="pDPetSellPriceField" layoutX="331.0" layoutY="267.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="addPetsPage" layoutX="8.0" layoutY="46.0" prefHeight="494.0" prefWidth="654.0" visible="false" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="46.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="308.0" layoutY="21.0" prefHeight="30.0" prefWidth="170.0" style="-fx-text-fill: #d49587;" text="Add Pets">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="petNameLabel" alignment="CENTER_RIGHT" layoutX="176.0" layoutY="128.0" prefHeight="19.0" prefWidth="100.0" style="-fx-font-weight: bold; -fx-text-fill: #d49587;" text="Pet Name:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="petAgeInput" layoutX="293.0" layoutY="180.0" prefHeight="25.0" prefWidth="200.0" />
+                  <TextField fx:id="petNameInput" layoutX="293.0" layoutY="125.0" prefHeight="25.0" prefWidth="200.0" />
+                  <Label fx:id="petCategoryLabel" alignment="CENTER_RIGHT" layoutX="147.0" layoutY="72.0" prefHeight="20.0" prefWidth="122.0" style="-fx-text-fill: #d49587;" text="Pet Category:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="petAgeLbl" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="209.0" layoutY="183.0" prefHeight="20.0" prefWidth="54.0" style="-fx-font-weight: bold; -fx-text-fill: #d49587;" text="Age:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="dogs" layoutX="444.0" layoutY="72.0" mnemonicParsing="false" style="-fx-text-fill: #d49587; -fx-font-weight: bold;" text="Dogs">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="PetCategory" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="cats" layoutX="366.0" layoutY="72.0" mnemonicParsing="false" style="-fx-text-fill: #d49587; -fx-font-weight: bold;" text="Cats" toggleGroup="$PetCategory">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="birds" layoutX="282.0" layoutY="72.0" mnemonicParsing="false" style="-fx-text-fill: #d49587; -fx-font-weight: bold;" text="Birds" toggleGroup="$PetCategory">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <Label fx:id="choiceLbl" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="129.0" layoutY="307.0" prefHeight="20.0" prefWidth="158.0" style="-fx-font-weight: bold; -fx-text-fill: #d49587;" text="Select your Choice:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="myChoiceBox" accessibleRole="LIST_ITEM" layoutX="299.0" layoutY="304.0" prefHeight="26.0" prefWidth="194.0" />
+                  <Button fx:id="submitBtn" alignment="CENTER" contentDisplay="BOTTOM" layoutX="266.0" layoutY="390.0" mnemonicParsing="false" onAction="#onSubmitbtn" prefHeight="30.0" prefWidth="134.0" style="-fx-background-color: #463739; -fx-font-weight: bold; -fx-text-fill: #EDE9D6;" text="SUBMIT" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="sexLbl" alignment="CENTER_RIGHT" layoutX="224.0" layoutY="223.0" prefHeight="20.0" prefWidth="52.0" style="-fx-text-fill: #d49587; -fx-font-weight: bold;" text="Sex:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="female" layoutX="131.0" layoutY="161.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="70.0" text="Female" visible="false">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="sex" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="male" layoutX="297.0" layoutY="223.0" mnemonicParsing="false" style="-fx-text-fill: #d49587; -fx-font-weight: bold;" text="Male" toggleGroup="$sex">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </RadioButton>
+                  <Label fx:id="priceLbl" alignment="CENTER_RIGHT" layoutX="186.0" layoutY="348.0" prefHeight="19.0" prefWidth="100.0" style="-fx-text-fill: #d49587; -fx-font-weight: bold;" text="Price($):" visible="false">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="priceInput" layoutX="300.0" layoutY="345.0" prefHeight="26.0" prefWidth="194.0" visible="false" />
+                  <TextField fx:id="petBreedInput" layoutX="299.0" layoutY="256.0" prefHeight="26.0" prefWidth="194.0" />
+                  <Label fx:id="breedLbl" alignment="CENTER_RIGHT" layoutX="226.0" layoutY="259.0" prefHeight="19.0" prefWidth="54.0" style="-fx-text-fill: #d49587; -fx-font-weight: bold;" text="Breed:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="female" layoutX="422.0" layoutY="223.0" mnemonicParsing="false" style="-fx-text-fill: #d49587; -fx-font-weight: bold;" text="Female">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="sex1" />
+                     </toggleGroup>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="showActivity" layoutX="1.0" layoutY="50.0" prefHeight="486.0" prefWidth="654.0" visible="false" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <TableView fx:id="activityTable" layoutX="58.0" layoutY="28.0" prefHeight="366.0" prefWidth="582.0">
+                    <columns>
+                      <TableColumn fx:id="activityPetCategoryColumn" prefWidth="158.40003204345703" text="Pet Category" />
+                      <TableColumn fx:id="activityPetNameColumn" prefWidth="142.39996337890625" text="Pet Name" />
+                        <TableColumn fx:id="activityPetBreedColumn" prefWidth="108.0" text="Breed" />
+                        <TableColumn fx:id="activityPetAgeColumn" prefWidth="92.79995727539062" text="Age" />
+                        <TableColumn fx:id="activityPetSexColumn" prefWidth="75.199951171875" text="Sex" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            
+            <AnchorPane fx:id="sellerAdPane" layoutX="-1.0" layoutY="41.0" prefHeight="502.0" prefWidth="662.0" visible="false">
+
+               <children>
+                  <Label fx:id="adPetCategoryLbl" layoutX="37.0" layoutY="33.0" style="-fx-font-weight: bold; -fx-text-fill: #d49587;" text="Pet Category:">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="adAgeLbl" layoutX="532.0" layoutY="33.0" style="-fx-font-weight: bold; -fx-text-fill: #d49587;" text="Age:">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="adPetNameLbl" layoutX="297.0" layoutY="53.0" style="-fx-font-weight: bold; -fx-text-fill: #d49587;" text="Pet Name:">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="adPetNameInput" layoutX="373.0" layoutY="53.0" style="-fx-font-weight: bold; -fx-text-fill: #EDE9D6;" text="Pet Name input">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="adPetCategoryInput" layoutX="135.0" layoutY="33.0" style="-fx-font-weight: bold; -fx-text-fill: #EDE9D6;" text="PetCategory input">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="adAgeInput" layoutX="566.0" layoutY="33.0" style="-fx-font-weight: bold; -fx-text-fill: #EDE9D6;" text="Age input">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="adBreedLbl" layoutX="37.0" layoutY="67.0" style="-fx-font-weight: bold; -fx-text-fill: #d49587;" text="Breed:">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="adBreedInput" layoutX="88.0" layoutY="67.0" style="-fx-font-weight: bold; -fx-text-fill: #EDE9D6;" text="Breed input">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="adSexLbl" layoutX="534.0" layoutY="67.0" style="-fx-font-weight: bold; -fx-text-fill: #d49587;" text="Sex:">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="adSexInput" layoutX="568.0" layoutY="67.0" style="-fx-font-weight: bold; -fx-text-fill: #EDE9D6;" text="Sex input">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <TableView fx:id="adTable" layoutX="35.0" layoutY="109.0" prefHeight="266.0" prefWidth="605.0">
+                    <columns>
+                      <TableColumn fx:id="adBuyerFNameColumn" prefWidth="155.19997787475586" text="Buyer First Name" />
+                      <TableColumn fx:id="adBuyerLNameColumn" prefWidth="169.6000518798828" text="Buyer Last Name" />
+                        <TableColumn fx:id="adMessageColumn" minWidth="0.0" prefWidth="181.60003662109375" text="Message" />
+                        <TableColumn fx:id="adStatusColumn" minWidth="5.60009765625" prefWidth="96.80001220703127" text="Status" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="adApproveBtn" layoutX="495.0" layoutY="386.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: #463739; -fx-font-weight: bold; -fx-text-fill: #EDE9D6;" text="APPROVE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+            <Button fx:id="addPetsBtn" layoutX="399.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="30.0" prefWidth="83.0" style="-fx-background-color: #EDE9D6; -fx-font-weight: bold; -fx-text-fill: #966567;" text="ADD PETS">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="activityBtn" layoutX="490.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #EDE9D6; -fx-font-weight: bold; -fx-text-fill: #966567;" text="MY ACTIVITY">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="logoutBtn" layoutX="588.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" prefHeight="30.0" prefWidth="83.0" style="-fx-background-color: #EDE9D6; -fx-font-weight: bold; -fx-text-fill: #966567;" text="LOGOUT">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="homeBtn" layoutX="308.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="30.0" prefWidth="83.0" style="-fx-background-color: #EDE9D6; -fx-font-weight: bold; -fx-text-fill: #966567;" text="HOME" textFill="#ede9d6">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fx:id="imageView" fitHeight="46.0" fitWidth="225.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
