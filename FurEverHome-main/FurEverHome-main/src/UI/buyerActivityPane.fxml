@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="591.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BuyerActivityController">
+   <children>
+      <TableView fx:id="tableView" layoutY="2.0" prefHeight="350.0" prefWidth="591.0">
+        <columns>
+          <TableColumn fx:id="petCategoryColumn" prefWidth="170.39996337890625" text=" Pet Category" />
+          <TableColumn fx:id="petNameColumn" prefWidth="136.7999267578125" text="Pet Name" />
+            <TableColumn fx:id="breedColumn" prefWidth="124.0" text="Breed" />
+            <TableColumn fx:id="ageColumn" prefWidth="78.39996337890625" text="Age" />
+            <TableColumn fx:id="sexColumn" minWidth="0.0" prefWidth="78.39996337890625" text="Sex" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

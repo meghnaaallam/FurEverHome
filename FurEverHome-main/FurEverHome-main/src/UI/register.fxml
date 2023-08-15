@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RegisterController">
+   <children>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="464.0" prefWidth="401.0" style="-fx-background-color: #966567;">
+         <children>
+            <ImageView fx:id="leftImageView" fitHeight="166.0" fitWidth="297.0" layoutX="44.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="464.0" prefWidth="287.0" style="-fx-background-color: #d49587;">
+         <children>
+            <Label alignment="CENTER_RIGHT" layoutX="27.0" layoutY="107.0" prefHeight="24.0" prefWidth="74.0" style="-fx-font-weight: bold;" text="First Name :" textFill="#966567" />
+            <Label alignment="CENTER_RIGHT" layoutX="28.0" layoutY="139.0" prefHeight="24.0" prefWidth="74.0" style="-fx-font-weight: bold;" text="Last Name :" textFill="#966567" />
+            <Label alignment="CENTER_RIGHT" layoutX="27.0" layoutY="170.0" prefHeight="24.0" prefWidth="74.0" style="-fx-font-weight: bold;" text="Email ID :" textFill="#966567" />
+            <Label alignment="CENTER_RIGHT" layoutX="27.0" layoutY="200.0" prefHeight="24.0" prefWidth="74.0" style="-fx-font-weight: bold;" text="Password :" textFill="#966567" />
+            <Label alignment="CENTER_RIGHT" layoutX="26.0" layoutY="299.0" prefHeight="24.0" prefWidth="74.0" style="-fx-font-weight: bold;" text="City :" textFill="#966567" />
+            <Label alignment="CENTER_RIGHT" layoutX="26.0" layoutY="330.0" prefHeight="24.0" prefWidth="74.0" style="-fx-font-weight: bold;" text="State :" textFill="#966567" />
+            <TextField fx:id="city" layoutX="108.0" layoutY="298.0" prefHeight="26.0" prefWidth="135.0" />
+            <Button layoutX="58.0" layoutY="383.0" mnemonicParsing="false" onAction="#onRegister" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: #463739; -fx-font-weight: bold; -fx-text-fill: #EDE9D6;" text="REGISTER" textFill="#966567" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fx:id="rightImageView" fitHeight="73.0" fitWidth="255.0" layoutX="7.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="14.0" layoutY="428.0" style="-fx-font-weight: bold;" text="Already have an account?" textFill="#966567">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="171.0" layoutY="425.0" onAction="#onLogin" style="-fx-font-weight: bold;" text="Login here!" textFill="#ede9d6">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Hyperlink>
+            <Label alignment="CENTER_RIGHT" layoutX="-4.0" layoutY="230.0" prefHeight="24.0" prefWidth="107.0" style="-fx-font-weight: bold;" text="Cnfrm Password :" textFill="#966567" />
+            <PasswordField fx:id="cPassword" layoutX="107.0" layoutY="229.0" prefHeight="26.0" prefWidth="135.0" AnchorPane.topAnchor="229.0" />
+            <RadioButton fx:id="sellerType" layoutX="115.0" layoutY="265.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="65.0" style="-fx-font-weight: bold;" text="Seller" textFill="#966567" />
+            <RadioButton fx:id="buyerType" layoutX="179.0" layoutY="265.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="65.0" style="-fx-font-weight: bold;" text="Buyer" textFill="#966567" />
+            <Label alignment="CENTER_RIGHT" layoutX="27.0" layoutY="265.0" prefHeight="24.0" prefWidth="74.0" style="-fx-font-weight: bold;" text="User Type :" textFill="#966567" />
+            <PasswordField fx:id="password" layoutX="108.0" layoutY="199.0" prefHeight="26.0" prefWidth="135.0" />
+            <TextField fx:id="lName" layoutX="107.0" layoutY="138.0" prefHeight="26.0" prefWidth="135.0" />
+            <TextField fx:id="emailId" layoutX="108.0" layoutY="169.0" prefHeight="26.0" prefWidth="135.0" />
+            <TextField fx:id="fName" layoutX="108.0" layoutY="106.0" prefHeight="26.0" prefWidth="135.0" />
+            <TextField fx:id="state" layoutX="107.0" layoutY="328.0" prefHeight="26.0" prefWidth="135.0" />
+         </children>
+         <HBox.margin>
+            <Insets right="5.0" />
+         </HBox.margin>
+      </AnchorPane>
+   </children>
+</HBox>

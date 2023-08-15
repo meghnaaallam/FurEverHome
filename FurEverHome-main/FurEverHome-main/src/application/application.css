@@ -1,0 +1,58 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.table-view {
+	-fx-background-color: transparent;
+	-fx-background-radius: 7px 7px 7px 7px;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #d49587, #966567);
+   /* -fx-background-radius: 7px 7px 0px 0px; */
+    -fx-background-insets: 0 11px 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-font-size: 11pt;
+    -font-weight: bold;
+    -fx-text-background-color: #463739;
+}
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #d49587, #966567);
+ /*    -fx-background-radius: 7px 0px 0px 7px;*/
+    -fx-background-insets: 0 11px 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+.table-row-cell:hover {
+    -fx-background-color: #EDE9D6;
+    -fx-text-background-color: #966567;
+    -fx-cursor: hand;
+}
+.table-row-cell{
+    -fx-background-color: #d49587;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-text-background-color: #EDE9D6;
+    -fx-padding: 0.0em;
+}
+
+.root{
+    -fx-font-family: "Montserrat";
+}
+
+
+
+
